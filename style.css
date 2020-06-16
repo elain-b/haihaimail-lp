@@ -1,0 +1,1438 @@
+* {
+    box-sizing: border-box;
+  }
+  
+/* 共通項 */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+/* 共通項 end */
+
+/* header start */
+
+.header {
+    width: 100%;
+    border-top: #1757b9 5px solid;
+    border-bottom: #F8F8F8 2px solid;
+}
+
+header {
+    width: 70%;
+    margin-right: auto;
+    margin-left : auto;
+}
+
+header h1 {
+    font-size: 12px;
+    color: black;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+}
+
+nav ul p {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 0.05rem;
+    color: #0e0062;
+}
+
+.logo {
+    background: url(https://www.hai2mail.jp/lpm/common/img/logo.svg) no-repeat 0 25px ;
+    background-position: bottom;
+    background-size: 150px 23px;
+    height: 60px;
+}
+
+.call-out {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.call {
+    background: #0e0062 url(https://www.hai2mail.jp/lpm/common/img/tel.png) no-repeat 5px 4px;
+    height: 25px;
+    width: 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+    float: left;
+}
+
+.rakus-logo {
+    width: 50px;
+    height: 70px;
+    background: url(https://www.hai2mail.jp/lpm/common/img/header_raks_logo.png) no-repeat;
+}
+
+/* header end */
+
+/* sec01 start */
+
+.sec01 {
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 2;
+    height: auto;
+}
+
+.sec01::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 50px solid transparent;
+    border-top: 30px solid #ADADAD;
+    left: 0;
+    right: 0;
+    bottom: -81px;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.sec01::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 50px solid transparent;
+    border-top: 30px solid #fff;
+    left: 0;
+    right: 0;
+    bottom: -80px;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.sec01 .box1 {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.sec01 .box1 .red {
+    color: #f42156;
+    font-size: 50px;
+}
+
+.sec01 .box1 .blue {
+    color: #1757b9;
+    font-size: 50px;
+}
+
+.sec01 .box1 h1 {
+    font-size: 80px;
+    margin: 25px 0;
+    letter-spacing: -0.7rem;
+}
+
+.sec01 .box2 {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+.sec01 .box2 span {
+    font-size: 20px;
+}
+
+.sec01 .box2 .crate1 {
+    display: flex;
+}
+
+.sec01 .box2 .crate1 ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sec01 .box2 .crate1 li {
+    background: url(https://www.hai2mail.jp/lpm/common/img/crown.png) center center no-repeat;
+    width: 182px;
+    height: 182px;
+    font-size: 15px;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 60px;
+}
+
+.num {
+    font-size: 36px;
+    margin: 0;
+}
+
+.per {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.sec01 .box2 .crate1 span {
+    display: flex;
+    justify-content: center;
+}
+
+.sec01 .box2 .crate2 {
+    top: -55px;
+    margin-top: 10px;
+    float: right;
+}
+
+.sec01 .box2 .crate2 a {
+    transition: all .3s;
+    background: #1757b9;
+    display: block;
+    border-radius: 5px;
+    width: 400px;
+    height: 120px;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 5px #999;
+    margin: 30px 0 0;
+    position: relative;
+    padding-top: 25px;
+}
+
+.sec01 .crate2 .disc {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.sec01 .crate2 .disc::before {
+    content: "";
+    position: absolute;
+    top: 62px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    display: block;
+    border-radius: 100%;
+}
+
+.sec01 .crate2 .disc:after {
+    content: "";
+    position: absolute;
+    top: 68px;
+    right: 22px;
+    width: 5px;
+    height: 5px;
+    border-bottom: 2px solid #1757b9;
+    border-right: 2px solid #1757b9;
+    transform: rotate(-45deg);
+}
+
+.sec01 .crate2 .red2 {
+    color: #f42156;
+    font-size: 16px;
+}
+
+.sec01 .crate2 .orange {
+    color: #ffbf43;
+    font-size: 32px;
+}
+
+.sec01 .crate2 .st {
+    font-size: 26px;
+}
+
+.sec01 .crate2 a .cloud1 {
+    display: block;
+}
+
+.sec01 .crate2 .cl_lef {
+    top: -50px;
+    right: 100px;
+}
+
+.sec01 .crate2 .cl_rig {
+    top: -50px;
+    right: -5px;
+}
+
+.sec01 .crate2 .cloud1 {
+    font-size: 12px;
+    border: 1.5px solid #81A0E9;
+    border-radius: 10px;
+    background: #fff;
+    color: #333;
+    width: 100px;
+    position: absolute;
+    padding: 8px;
+    text-shadow: none;
+}
+
+.sec01 .crate2 .cloud1::after {
+    content: "";
+    position: absolute;
+    border-top: 10px solid #fff;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    bottom: -9px;
+    left: 5px;
+}
+
+/* sec01 end */
+
+/* sec02 start */
+
+.sec02 {
+    background-color: #f8f8f8;
+    margin: 0 0 20px;
+    height: auto;
+    width: 100%;
+    padding: 100px 0 50px 0;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 1.2;
+    z-index: 1;
+    /* border-top: 2px solid #eee; */
+}
+
+.sec02 .box1 {
+    text-align: center;
+}
+
+.sec02 .box1 span {
+    font-size: 62px;
+    font-weight: bold;
+    color: #074d82;
+    padding: 0 20px;
+}
+
+.sec02 .box1 h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #074d82;
+}
+
+.sec02 .box1 h2::before {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    display: block;
+    font-size: 30px;
+    content: ' ';
+    background-color: #074d82;
+    margin-right: 13px;
+}
+
+.sec02 .box1 h2::after {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 30px;
+    height: 3px;
+    display: block;
+    font-size: 30px;
+    content: ' ';
+    background-color: #074d82;
+    margin-left: 13px;
+}
+
+.sec02 .box1 h3 {
+    font-size: 15px;
+    font-weight: bold;
+    color: #074d82;
+    line-height: 1.5;
+    margin: 10px 0 0;
+}
+
+.companylogo_list {
+    width: 100%;
+    text-align: center;
+    margin: 40px auto 50px;
+    background: url(https://www.hai2mail.jp/lpm/common/img/logo/company_logo.png) repeat-x 0 0;
+    background-size: 1907px auto;
+    box-shadow: 3px 3px 10px 2px rgba(0,0,0,0.1);
+    height: 165px;
+    overflow: hidden;
+    -webkit-animation: loop 50s linear infinite;
+    animation: loop 50s linear infinite;
+}
+
+@keyframes loop {
+    from {
+      background-position: -1000% 0;
+    }
+    to {
+        background-position: 0 0;
+    }
+}
+
+/* sec02 end */
+
+/* sec03 start */
+
+.sec03 {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 2;
+}
+
+.sec03::before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 50px solid transparent;
+    border-top: 30px solid #ADADAD;
+    left: 0;
+    right: 0;
+    bottom: -81px;
+    z-index: 1;
+    margin: 0 auto;
+}
+
+.sec03::after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    border: 50px solid transparent;
+    border-top: 30px solid #fff;
+    left: 0;
+    right: 0;
+    bottom: -80px;
+    z-index: 2;
+    margin: 0 auto;
+}
+
+.sec03 .box1 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sec03 .box1:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+.sec03 .box1 h2 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 150%;
+    margin: 0 0 32px;
+}
+
+.sec03 .box1 ul {
+    padding-bottom: 32px;
+    letter-spacing: 3px;
+    padding-left: 320px;
+}
+
+.sec03 .box1 li {
+    font-size: 30px;
+    padding: 0 0;
+    position: relative;
+}
+
+.sec03 .box1 li::before {
+    content: "";
+    top: 25%;
+    left: -55px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    border: 3px solid #666;
+}
+
+.sec03 .box1 li::after {
+    content: "";
+    position: absolute;
+    margin: 5px;
+    width: 20px;
+    height: 40px;
+    top: -5%;
+    left: -50px;
+    border-right: 7px solid #799CEE;
+    border-bottom: 7px solid #799CEE;
+    -webkit-transform: rotate(45deg);
+}
+
+.sec03 .box1 span {
+    color: #1757b9;
+    font-weight: 600;
+    font-size: 120%;
+}
+
+/* sec03 end */
+
+/* sec04 start */
+
+.sec04 {
+    height: auto;
+    /* margin: 64px 0 0; */
+    padding: 80px 0 80px;
+    font-size: 44px;
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 5px;
+    background: #f8f8f8;
+}
+
+.mail {
+    color: #ffbf43;
+    font-weight: 800;
+    font-size: 70px;
+    text-shadow: #120261 0.4rem 0.4rem 0;
+    letter-spacing: .5rem;
+}
+
+.sec04 strong {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+/* sec04 end */
+
+/* sec05 start */
+
+.sec05 {
+    background: #333;
+    margin: 0;
+    padding: 5rem 0 2rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+.sec05 .box1 {
+    font-size: 25px;
+}
+
+.sec05 .box1 span {
+    font-size: 35px;
+}
+
+.sec05 .box2 {
+    margin: 0 auto 48px auto;
+}
+
+.sec05 .box2 .crate1 {
+    background: #f42156;
+    border-radius: .5rem;
+    box-shadow: 0 0.4rem #444;
+    margin: 1rem auto;
+    width: 33%;
+    margin-top: 90px;
+}
+
+.sec05 .crate1 a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    height: 7.6rem;
+    line-height: 120px;
+    left: 10px;
+    position: relative;
+    z-index: 0;
+}
+
+.sec05 .crate1 a::before {
+    content: "";
+    width: 60px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.sec05 .crate1 a::after {
+    background: url(https://www.hai2mail.jp/lpm/common/img/icon_file_red.png) no-repeat;
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -18px;
+    transition: .5s;
+}
+
+.sec05 .crate1 .tx {
+    display: table;
+    position: absolute;
+    left: 70px;
+    z-index: 2;
+}
+
+.free {
+    font-size: 36px;
+}
+
+.cloud {
+    font-size: 18px;
+    border: 3px solid #81a0e9;
+    border-radius: 16px;
+    background: #fff;
+    color: #333;
+    width: 440px;
+    padding: 12px 25px;
+    text-shadow: none;
+    line-height: 1.6;
+    top: -65px;
+    right: 41px;
+    position: absolute;
+}
+
+.cloud::before {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    margin-left: -15px;
+    border: 12px solid transparent;
+    border-top: 12px solid #fff;
+    z-index: 2;
+}
+
+.cloud::after {
+    content: "";
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -17px;
+    border: 14px solid transparent;
+    border-top: 14px solid #81a0e9;
+    z-index: 1;
+}
+
+.sec05 .box3 {
+    width: 50%;
+    margin: 0 auto 16px;
+    color: #ddd;
+}
+
+.tel {
+    clear: both;
+    margin: 0 0 32px;
+    padding: 8px 0;
+    color: #ddd;
+    font-size: 14px;
+    border-bottom: #ddd solid 1px;
+    border-top: #ddd solid 1px;
+    letter-spacing: 3px;
+}
+
+.sec05 ul {
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    justify-content: center;
+}
+
+.sec05 .box3 li {
+    margin: 0 8px;
+}
+
+/* sec05 end */
+
+/* sec06 start */
+
+.flex-box {
+    background: #f8f8f8;
+}
+
+.sec06 {
+    margin: 0 auto;
+    padding: 84px 0 84px;
+    width: 65%;
+    text-align: center;
+}
+
+.sec06 .box1 h2,span {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.sec06 .box1 strong {
+    font-size: 40px;
+}
+
+.three {
+    color: #1757b9;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.sec06 .box2 {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 0;
+}
+
+.sec06 .box2 ul {
+    background: #fff;
+    margin: 0 auto;
+    padding: 20px 10px 40px 10px;
+    width: 255px;
+    height: 250px;
+    border-radius: 50%;
+    border: #3d7fe0 7px solid;
+}
+
+.sec06 .box2 p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icon01 {
+    background: url(https://www.hai2mail.jp/lpm/common/img/icon_merit_mail.svg) no-repeat center top;
+    width: 120px;
+    height: 120px;
+    background-size: 120px 120px;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.icon02 {
+    background: url(https://www.hai2mail.jp/lpm/common/img/icon_merit_data.svg) no-repeat center top;
+    width: 120px;
+    height: 120px;
+    background-size: 120px 120px;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.icon03 {
+    background: url(https://www.hai2mail.jp/lpm/common/img/icon_merit_easy.svg) no-repeat center top;
+    width: 120px;
+    height: 120px;
+    background-size: 120px 120px;
+    margin: 0 auto;
+    border-radius: 100%;
+}
+
+.flex-box .box2 span {
+    position: relative;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    margin: auto;
+    border-style: solid;
+    border-width: 25px;
+    border-color: #3d7fe0 transparent transparent transparent;
+}
+
+.flex-box .box2 span:before {
+    content: '';
+    float: left;
+    position: absolute;
+    top: -45px;
+    left: -30px;
+    width: 0;
+    height: 0;
+    border-color: #fff transparent transparent transparent;
+    border-style: solid;
+    border-width: 30px;
+    transition: all 100ms linear;
+}
+
+/* sec06 end */
+
+/* sec07 start */
+
+.sec07 {
+    text-align: center;
+    padding: 50px 0 50px;
+}
+
+.sec07 .flex-box {
+    width: 70%;
+    background: #fff;
+    margin: 0 auto;
+}
+
+.bg-gray {
+    background-color: #f8f8f8;
+}
+
+.sec07 .box1 h2 {
+    margin: 0 0 30px;
+    font-size: 50px;
+}
+
+.sec07 .box1 p {
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.sec07 .box2 {
+    display: flex;
+    margin: 50px 0 0;
+    justify-content: center;
+}
+
+.sec07 .crate1 {
+    width: 30%;
+}
+
+.sec07 .crate1 h3 {
+    margin: 15px 0 15px 0;
+    font-size: 20px;
+}
+
+.sec07 .crate1 p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* sec07 end */
+
+/* sec08 start */
+
+.sec08 {
+    text-align: center;
+    padding: 50px 0 50px;
+    background-color: #f8f8f8;
+}
+
+.sec08 .flex-box {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sec08 h2 {
+    margin: 0 0 30px;
+    font-size: 50px;
+}
+
+.sec08 .box1 p {
+    font-size: 22px;
+    line-height: 1.6;
+}
+
+.sec08 .box2 {
+    display: flex;
+    margin: 50px 0 0;
+    justify-content: center;
+}
+
+.sec08 .crate1 {
+    width: 30%;
+}
+
+.sec08 .crate1 h3 {
+    margin: 15px 0 15px 0;
+    font-size: 20px;
+}
+
+.sec08 .crate1 p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* sec08 end */
+
+/* sec09 start */
+
+.sec09 {
+    padding: 60px 0 70px;
+    text-align: center;
+    background: #BBE4F9;
+}
+
+.sec09 .flex-box {
+    background: #BBE4F9;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sec09 .flex-box h2 {
+    margin: 0 0 30px;
+    font-size: 50px;
+}
+
+.lead {
+    font-size: 28px;
+    line-height: 1.6;
+}
+
+.sec09 .box1 strong {
+    color: #f42156;
+    font-weight: bold;
+}
+
+.sec09 .crate1 {
+    display: flex;
+    margin: 50px 0;
+    background: #fff;
+    height: 350px;
+    padding: 30px 30px 90px;
+}
+
+.sec09 .crate1 h3 {
+    margin: 0 0 25px;
+    font-size: 28px;
+}
+
+.logo2 {
+    margin-bottom: 15px;
+}
+
+.sec09 .box3 {
+    margin: 0 30px 0 40px;
+}
+
+.detail_text {
+    margin-bottom: 30px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.company_name {
+    padding-top: 25px;
+    border-top: 1px solid #333;
+    font-size: 20px;
+    text-align: right;
+    font-weight: lighter;
+}
+/* sec09 end */
+
+/* sec10 start */
+
+.sec10 {
+    padding: 60px 0 80px;
+    background: #3b7fe0;
+    color: #fff;
+}
+
+.sec10 .crate1 {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.sec10 .box1 h2 {
+    font-size: 50px;
+    line-height: 100%;
+    margin: 0 0 60px 0;
+}
+
+.sec10 .box1 span {
+    font-size: 30px;
+}
+
+.sec10 .box2 {
+    margin-bottom: 50px;
+}
+
+.sec10 .box2 h3 {
+    padding-top: 50px;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+
+.sec10 .box2 ul {
+    display: flex;
+    justify-content: center;
+}
+
+.sec10 .box2 li {
+    width: 19%;
+    height: auto;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.sec10 .box2 img {
+    width: 90%;
+    height: auto;
+    margin: 0 10px;
+}
+
+.sec10 .box2 h4 {
+    font-size: 14px;
+    margin: 0;
+    color: #efe;
+}
+
+/* sec10 end */
+
+/* sec11 start */
+
+.sec11 {
+    padding: 60px 0 70px;
+    background: #cce3ae;
+}
+
+.sec11 .crate1 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sec11 .box1 h2 {
+    font-size: 30px;
+    line-height: 180%;
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+.sec11 .box1 span {
+    font-size: 50px;
+    color: #30a163;
+}
+
+.sec11 .box2 {
+    display: flex;
+}
+
+.sec11 .box2 ul {
+    width: 35%;
+    float: left;
+}
+
+.sec11 .box2 .icon1 {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-size: 100%;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    background: url(https://www.hai2mail.jp/lpm/common/img/icon_sup_sup.svg);
+}
+
+.sec11 .box2 .icon2 {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-size: 100%;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    background: url(https://www.hai2mail.jp/lpm/common/img/icon_sup_ser.svg);
+}
+
+.sec11 .box2 .icon3 {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    background-size: 100%;
+    border-radius: 100%;
+    border: 5px solid #fff;
+    background: url(https://www.hai2mail.jp/lpm/common/img/icon_sup_sec.svg);
+}
+
+.sec11 .box2 h3 {
+    text-align: center;
+    font-size: 20px;
+    color: #111;
+}
+
+.sec11 .box2 p {
+    padding: 0 20px;
+    font-size: 15px;
+}
+
+/* sec11 end */
+
+/* sec12 start */
+
+.sec12 {
+    background: #f8f8f8;
+    padding: 60px 0 70px;
+}
+
+.sec12 .box1 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.sec12 .box1 h2 {
+    margin: 0;
+    padding-bottom: 40px;
+    font-size: 45px;
+    line-height: 1.6;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.sec12 .box1 h2::after {
+    width: 120px;
+    height: 4px;
+    content: "";
+    display: block;
+    margin: 6px auto 0px;
+    background-color: #3b7fe0;
+}
+
+/* formの中 */
+
+.sec12 .box1 .form1 {
+    display: block;
+}
+
+.sec12 .box1 .form1 .form2 {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    max-width: 980px;
+}
+
+.sec12 .box1 .form1 .form2 .type1 {
+    display: flex;
+    margin-bottom: 10px;
+    overflow: hidden;
+    width: 100%;
+    float: none;
+}
+
+.sec12 .form2 div {
+    display: contents;
+}
+
+.sec12 .type1 label {
+    width: 185px;
+    padding: 5px 10px 5px 0;
+    font-weight: bold;
+    display: block;
+    color: #555;
+}
+
+.sec12 .type1 label span {
+    font-size: 15px;
+}
+
+.sec12 .type1 .desc {
+    margin: 0 auto;
+}
+
+.sec12 .desc ul {
+    margin: 0 0 5px;
+    padding: 0;
+    height: 40px;
+}
+
+.sec12 .desc li {
+    float: left;
+}
+
+.sec12 .desc label {
+    width: 155px;
+    padding: 0;
+}
+
+.sec12 .desc input {
+    line-height: 1;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.sec12 .form2 li>label>input {
+    width: 20px !important;
+    height: 20px !important;
+}
+
+.sec12 .form2 li>label>span {
+    font-size: 14px;
+    vertical-align: top;
+    padding-top: 1px !important;
+    display: inline-block;
+}
+
+/* 会社名 */
+
+.sec12 .type1 .form-required {
+    color: #e73a36;
+    font-size: 13px;
+    letter-spacing: 3px;
+    border: 1px solid #e73a36;
+    border-radius: 2px;
+    padding: 0 3px;
+    line-height: 100%;
+    margin: 0 10px 5px 10px;
+}
+
+.sec12 .input input {
+    background: #fff;
+    clear: both;
+
+    width: 70%;
+    margin: 0 auto 5px;
+    margin-left: 0;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 45px !important;
+
+    display: inline-block;
+    padding: 8px 10px;
+    color: #666;
+    border: 1px solid #ccc;
+}
+
+/* 都道府県 */
+
+.sec12 .input2:before {
+    margin-top: -8px;
+    border-bottom-style: solid;
+    border-top: none;
+
+    content: '';
+    position: absolute;
+    z-index: 2;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 4px dashed;
+    border-color: #888 transparent;
+    pointer-events: none;
+}
+
+.sec12 .input2 {
+    position: absolute;
+}
+
+.sec12 .input2 select {
+    width: 200px;
+    height: 45px !important;
+    padding: 5px 10px;
+    line-height: 1;
+    color: #62717a;
+    text-shadow: 0 1px white;
+    background: #fff;
+    border-radius: 0;
+    -webkit-appearance: none;
+
+    border: 1px solid #ccc;
+}
+
+.sec12 .input2 option {
+    margin: 3px;
+    padding: 6px 8px;
+    text-shadow: none;
+    background: #f2f2f2;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 100% !important;
+}
+
+.sec12 .input2:before,
+.sec12 .input2:after {
+    content: '';
+    position: relative !important;
+    z-index: 2;
+    top: 50%;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 4px dashed;
+    border-color: #888 transparent;
+    pointer-events: none;
+}
+
+.sec12 .input2:after {
+    margin-top: 0px;
+    border-top-style: solid;
+    border-bottom: none;
+    top: 25px;
+    right: 18px;
+}
+
+.sec12 .input2:before {
+    margin-top: -8px;
+    border-top-style: solid;
+    border-top: none;
+    position: absolute;
+    top: 25px;
+    right: -190px;
+}
+
+/* お問い合わせ内容 */
+
+.sec12 .hs-input4{
+    padding-top: 5px;
+    line-height: 150%;
+    background: #fff;
+    min-height: 120px;
+
+    width: 70%;
+    margin: 0 auto 5px;
+    margin-left: 0;
+    letter-spacing: 0.5px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 45px !important;
+
+    border: 1px solid #ccc;
+}
+
+/* 送信 */
+
+.sec12 .hs-submit {
+    position: relative;
+    height: 90px;
+}
+
+.sec12 .hs-button {
+    position: static;
+    color: #fff;
+    background-color: #ff5756;
+    border: 0;
+    border-bottom: 3px solid #ddd;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 170%;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 20px 0 0 0;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    border-radius: 10px;
+    user-select: none;
+    top: 10px;
+}
+
+/* formの中 end */
+
+.sec12 .crate1 {
+    text-align: center;
+    margin-top: 35px;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #414141;
+}
+
+.sec12 .crate1 a {
+    color: #3C7FE0;
+}
+
+/* sec12 end */
+
+/* footer start */
+
+footer {
+    background: #333;
+    margin: 0;
+    padding: 5rem 0 2rem 0;
+    color: #fff;
+    text-align: center;
+}
+
+footer .crate1 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.sec05 .box1 {
+    margin: 0 auto 16px;
+    color: #ddd;
+}
+
+.tel {
+    clear: both;
+    margin: 0 0 32px;
+    padding: 8px 0;
+    color: #ddd;
+    font-size: 14px;
+    border-bottom: #ddd solid 1px;
+    border-top: #ddd solid 1px;
+    letter-spacing: 3px;
+}
+
+footer ul {
+    display: flex;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.2px;
+    justify-content: center;
+}
+
+footer .box1 li {
+    margin: 0 8px;
+}
+
+footer .box2 {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+footer .footer_logo {
+    width: 50px;
+    height: 55px;
+    float: left;
+    background: url(https://www.hai2mail.jp/lpm/common/img/lp_13a_footer_logo.gif) no-repeat;
+    border-radius: 6px;
+}
+
+footer .box2 li {
+    margin: 0 5px;
+}
+
+footer .box2 a {
+    color: #fff;
+    font-weight: normal;
+}
+
+footer .box3 p {
+    font-size: 12px;
+}
+
+/* footer end */
